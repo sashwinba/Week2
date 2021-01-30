@@ -1,0 +1,56 @@
+html {
+    min-height: 100%;
+    background: url(img/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+    align-content: center;
+    height: 90vh;
+    width: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.block {
+    font-family: 'Permanent Marker',
+        cursive;
+    font-size: 13em;
+    color: white;
+
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 30%;
+    overflow: hidden;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#blk01,
+#blk00,
+#blk10,
+#blk11 {
+    border-right: 6px solid white;
+    border-bottom: 6px solid white;
+}
+
+#blk02,
+#blk12 {
+    border-bottom: 6px solid white;
+}
+
+#blk20,
+#blk21 {
+    border-right: 6px solid white;
+}
