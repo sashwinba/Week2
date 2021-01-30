@@ -17,6 +17,17 @@ section {
     width: 100vh;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0;
+}
+
+footer {
+    text-align: center;
+}
+
+button {
+    height: 7vh;
+    width: 80vh;
+    border-radius: 1vh;
 }
 
 .block {
