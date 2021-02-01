@@ -2,7 +2,7 @@ const modal = document.querySelector(".modal");
 const inputModal = document.querySelector(".inputModal");
 const slider = document.querySelector("input[type=range]");
 const cntOutput = document.querySelector("#matches");
-const resetButton = document.querySelector("button");
+const resetButton = document.querySelector("#resetButton");
 const closeButton = document.querySelector(".close-button");
 const submit = document.querySelector("form");
 const p1 = document.querySelector("#player1");
@@ -15,7 +15,7 @@ const remainingMatches = document.querySelector("#remainingMatches");
 const section = document.querySelector("section");
 const result = document.querySelector(".result");
 const XKey = document.querySelector("#XKey");
-
+//iife immediatly invoked
 let board = [[-1,-1,-1],[-1,-1,-1],[-1,-1,-1]];
 let character = ["X" , "O"];
 let turn = 0,totMove=0,matchOver=0,matchCnt = 0;

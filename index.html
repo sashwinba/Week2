@@ -18,20 +18,20 @@
         <div class="inputModalContent">
             <form action="#">
                 <fieldset>
-                    <p> Number of Matches: <b><span id="matches"></span></b> </p>
-                    <input type="range" min="1" max="10" value="5" step="1">
+                    <label for="sliderBar">Number of Matches: <b><span id="matches"></span></b></label>
+                    <input id="sliderBar" type="range" min="1" max="10" value="5" step="1">
                 </fieldset>
                 <fieldset>
                     <label for="player1">Enter 1<sup>st</sup> Player's Name: </label>
-                    <input type="text" id="player1" required>
+                    <input type="text" id="player1" placeholder="First Player Name" required>
                 </fieldset>
                 <fieldset>
                     <label for="player2">Enter 2<sup>nd</sup> Player's Name: </label>
-                    <input type="text" id="player2" required>
+                    <input type="text" id="player2" placeholder="Second Player Name" required>
                 </fieldset>
 
                 <fieldset>
-                    <p>1<sup>st</sup> Player Chooses: </p>
+                    <label> 1<sup>st</sup> Player Chooses: </label>
                     <input type="radio" id="XKey" name="Key" value="XKey" checked>
                     <label for="XKey"> <b>X</b> </label><br>
                     <input type="radio" id="OKey" name="Key" value="Okey">
@@ -62,7 +62,7 @@
     </section>
 
     <footer>
-        <button>
+        <button id="resetButton">
             <h1>RESTART MATCH</h1>
         </button>
     </footer>
