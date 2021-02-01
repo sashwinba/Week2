@@ -8,10 +8,46 @@
     <link rel="icon" href="img/logo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <div class="inputModal">
+        <div class="inputModalContent">
+            <form action="#">
+                <fieldset>
+                    <p> Number of Matches: <b><span id="matches"></span></b> </p>
+                    <input type="range" min="1" max="10" value="5" step="1">
+                </fieldset>
+                <fieldset>
+                    <label for="player1">Enter 1<sup>st</sup> Player's Name: </label>
+                    <input type="text" id="player1" required>
+                </fieldset>
+                <fieldset>
+                    <label for="player2">Enter 2<sup>nd</sup> Player's Name: </label>
+                    <input type="text" id="player2" required>
+                </fieldset>
+
+                <fieldset>
+                    <p>First Player Chooses: </p>
+                    <input type="radio" id="XKey" name="Key" value="XKey" checked>
+                    <label for="XKey">X</label><br>
+                    <input type="radio" id="OKey" name="Key" value="Okey">
+                    <label for="OKey">O</label><br>
+                </fieldset>
+
+                <input type="submit" value="SUBMIT">
+            </form>
+        </div>
+    </div>
+
+    <div class="player">
+        <h1><span id="player1Name">A</span>: <span id="player1Score">0</span> </h1>
+        <h1>Remaining Matches: <span id="remainingMatches"></span> </h1>
+        <h1><span id="player2Name">B</span>: <span id="player2Score">0</span> </h1>
+    </div>
 
     <section>
         <div class="block" id="blk00"></div>
@@ -26,8 +62,17 @@
     </section>
 
     <footer>
-        <button>RESET</button>
+        <button>
+            <h1>RESET</h1>
+        </button>
     </footer>
+
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p class="result"></p>
+        </div>
+    </div>
 
     <script src="app.js"></script>
 </body>
